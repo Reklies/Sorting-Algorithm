@@ -20,23 +20,45 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
-
-
-
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: your name: Reklies J
+RegisterNumber:212223110041 
+'''
+def selection_sort(nums):
+    for i in range(1,len(nums)):
+        item_to_insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>item_to_insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=item_to_insert
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 ```
 ii)	#Insertion Sort
 ```
-
-
-
-
-
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: your name: Reklies J
+RegisterNumber: 212223110041
+'''
+def insertion_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1 , len(nums)):
+            if nums[j]<nums[lowest_value_index]:
+                lowest_value_index =j
+        nums[i], nums[lowest_value_index]=nums[lowest_value_index], nums[i]
+list_of_nums=eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
 
 ```
 
 ## Output:
+![Screenshot 2023-12-31 224417](https://github.com/Reklies/Sorting-Algorithm/assets/147139232/ab06ed4b-621d-4bf5-948b-a4de6eb1de3c)
+![Screenshot 2023-12-31 224505](https://github.com/Reklies/Sorting-Algorithm/assets/147139232/a5ecb8ca-4b7a-4344-b4f2-6815291ede5b)
 
 
 ## Result:
